@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paticipantes.css">
+    <link rel="icon" href="/Img/logos/Untitled.png">
+    <title>AP-Alv</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="listass">
+            <img class="Logo" src="/Img/Nueva carpeta/Capa 1.png" alt="">
+            
+            <li class="in"><a href="/Index/Index.html">Inicio</a></li>
+            <li class="in" ><a href="">Registrarse</a></li>
+            <li class="in" ><a href="/Contacto/cont.html">Contacto</a></li>
+            <li class="in"  ><a href="/Acerca/AcercaDe.html">Acerca De</a></li>
+            
+            <div class="search">
+                <form action="">
+            <input type="text" class="lupa" name="" placeholder="Buscar" >
+            <input class="enviar" name="" type="submit" value="search">
+        </form>
+        </div>
+        
+        
+        </ul>
+</nav>
+<hr>
+
+<main>
+    <section class="Selection">
+        <div class="Deportes">
+            <ul class="lista">
+            <li class="in" ><a href="">Torneos</a></li>
+            <li class="in"><a href="/Picks/picks.html">Picks</a></li>
+            <li class="in"><a href="/Participantes/participantes.html">Participantes</a></li>
+            <li class="in"><a href="">Resultados</a></li>
+        </ul>
+        </div>
+
+
+
+        <div class="reglass" >
+          <h1 class="anual">Tabla Anual</h1>
+          
+          <hr>
+  
+  
+          <div class="datatable-container">
+  
+              <table class="anualtable" id="myTable">
+  
+  <script>
+
+var data = [
+    { Posiciones: 4, Nombre: "Saiyajin", Ganados: 16, Perdidos: 12 },
+    { Posiciones: 1, Nombre: "Fer LB", Ganados: 17, Perdidos: 7 },
+    { Posiciones: 1, Nombre: "Gominola", Ganados: 19, Perdidos: 7 },
+    { Posiciones: 5, Nombre: "Golosopicks", Ganados: 17, Perdidos: 12 },
+    { Posiciones: 5, Nombre: "Chueda", Ganados: 18, Perdidos: 12 },
+    { Posiciones: 3, Nombre: "Wingbet", Ganados: 14, Perdidos:10 },
+    { Posiciones: 5, Nombre: "Allincrack", Ganados: 11, Perdidos: 12 },
+    { Posiciones: 8, Nombre: "Ninja", Ganados: 22, Perdidos: 13 }
+];
+
+
+// Get a reference to the table element
+var table = document.getElementById("myTable");
+
+// Add a table header 
+
+var header = table.createTHead();
+var row = header.insertRow();
+var cell1 = row.insertCell(0);
+cell1.innerHTML = "Positions";
+var cell2 = row.insertCell(1);
+cell2.innerHTML = "Name";
+var cell3 = row.insertCell(2);
+cell3.innerHTML = "Wins";
+var cell4 = row.insertCell(3);
+cell4.innerHTML = "Lost";
+var cell5 = row.insertCell(4);
+cell5.innerHTML = "Effectiveness";
+
+
+// Sort the data array by the first place
+data.sort(function(a, b) {
+    var aEfficiency = (a.Ganados/(a.Ganados+a.Perdidos))*100;
+    var bEfficiency = (b.Ganados/(b.Ganados+b.Perdidos))*100;
+    return bEfficiency - aEfficiency;
+});
+
+
+// Get a reference to the table element
+var table = document.getElementById("myTable");
+
+// Clear the existing table rows
+while (table.rows.length > 1) {
+    table.deleteRow(1);
+}
+
+// Loop through the data and add a row for each object
+for (var i = 0; i < data.length; i++) {
+    var row = table.insertRow();
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    var cell5 = row.insertCell(4);
+    cell1.innerHTML = i+1;
+    if (i === 0) {
+      cell1.innerHTML = '<img src="/Img/Medallas/Oro 1.png" alt="Oro"> ' + (i+1);
+    }else if(i === 1){
+      cell1.innerHTML = '<img src="/Img/Medallas/Plata.png" alt="silver_medal">' + (i+1);
+    }else if(i === 2){
+      cell1.innerHTML = '<img src="/Img/Medallas/Bronce.png" alt="bronze_medal">' + (i+1);
+    }
+    cell2.innerHTML = data[i].Nombre;
+    cell3.innerHTML = data[i].Ganados;
+    cell3.classList.add("green")
+    cell4.innerHTML = data[i].Perdidos;
+    cell4.classList.add("red")
+    cell5.innerHTML = (data[i].Ganados/(data[i].Ganados+data[i].Perdidos) *100).toFixed(2)+'%';
+    cell5.classList.add("par")
+
+
+
+
+
+
+
+
+    
+}
+
+  </script>
+
+
+
+
+               
+            </table>
+               
+  
+  
+              
+          </div>
+  
+      </div>
+  
+
+
+
+
+
+
+
+    <div class="participantes">
+
+
+
+    
+<table id="table">
+  
+  <script>
+
+var data = [
+  { Nombre: "Saiyajin", Campeonatos: 2, MejorRecord: "21-10", Efectividad_del_Mejor_Mes: "67.74%" },
+  { Nombre: "Fer LB", Campeonatos: 0, MejorRecord: "0", Efectividad_del_Mejor_Mes: "0%" },
+  { Nombre: "Gominola", Campeonatos: 1, MejorRecord: "22-8", Efectividad_del_Mejor_Mes: "73.33%" },
+  { Nombre: "Golosopicks", Campeonatos: 10, MejorRecord: "22-9", Efectividad_del_Mejor_Mes: "70.97%" },
+  { Nombre: "Chueda", Campeonatos: 11, MejorRecord: "25-5", Efectividad_del_Mejor_Mes: "83.33%" },
+  { Nombre: "Wingbet", Campeonatos: 1, MejorRecord: "20-9", Efectividad_del_Mejor_Mes: "68.97%" },
+  { Nombre: "Allincrack", Campeonatos: 6, MejorRecord: "22-9", Efectividad_del_Mejor_Mes: "70.97" },
+  { Nombre: "Ninja", Campeonatos: 2, MejorRecord: "22-9", Efectividad_del_Mejor_Mes: "70.97%"},
+
+];
+
+  // Sort data by number of championships
+  data.sort(function(a, b) {
+    return b.Campeonatos - a.Campeonatos;
+  });
+  
+  // Create table
+  var table = document.createElement("table");
+  
+  // Create table headers
+  var headers = ["Nombre", "Campeonatos", "MejorRecord", "Efectividad_del_Mejor_Mes"];
+  var headerRow = document.createElement("tr");
+  headers.forEach(function(header) {
+    var th = document.createElement("th");
+    th.innerHTML = header;
+    headerRow.appendChild(th); 
+  });
+  table.appendChild(headerRow);
+  
+  // Add data to table
+  data.forEach(function(rowData) {
+  var row = document.createElement("tr");
+  headers.forEach(function(header) {
+    var td = document.createElement("td");
+    if (header === "Campeonatos") {
+      for (var i = 0; i < rowData[header]; i++) {
+        var img = document.createElement("img");
+        img.src = "/Img/Medallas/Yellow-Christmas-Star-PNG.png";
+        img.alt = "star";
+        td.appendChild(img);
+      }
+    } else {
+      td.innerHTML = rowData[header];
+    }
+    row.appendChild(td);
+  });
+  table.appendChild(row);
+});
+  
+  // Append table to body
+  document.body.appendChild(table);
+
+</script>
+
+</table>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Picks/picks.css">
+    <link rel="icon" href="/Img/logos/Untitled.png">
+    <script src="/tabla.js"></script>
+    <title>AP-Alv</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="listass">
+            <img class="Logo" src="/Img/Nueva carpeta/Capa 1.png" alt="">
+            
+            <li class="in"><a href="/Index/Index.html">Inicio</a></li>
+            <li class="in" ><a href="/Registro/registro.html">Registrarse</a></li>
+            <li class="in" ><a href="/Contacto/cont.html">Contacto</a></li>
+            <li class="in"  ><a href="/Acerca/AcercaDe.html">Acerca De</a></li>
+            
+            <div class="search">
+                <form action="">
+            <input type="text" class="lupa" name="" placeholder="Buscar" >
+            <input class="enviar" name="" type="submit" value="search">
+        </form>
+        </div>
+        
+        
+        </ul>
+</nav>
+<hr>
+
+
+
+
+    <main>
+        <section class="Selection">
+            <div class="Deportes">
+                <ul class="lista">
+                <li class="in" ><a href="">Torneos</a></li>
+                <li class="in"><a href="/Picks/picks.html">Picks</a></li>
+                <li class="in"><a href="/Participantes/participantes.html">Participantes</a></li>
+                <li class="in"><a href="">Resultados</a></li>
+            </ul>
+            </div>
+
+            <div class="top">
+
+                <h1 class="dia">Picks del Dia</h1>
+                <hr>  
+                <div class="images-container">
+                    
+                    <div class="bets"><img src="/Img/apuestas/021ac0a0-fdcf-4bc5-ac9d-4029933404fe.jpg" alt="">
+                    <div class="overlay">
+
+                        <div class="content">
+                         <h3> Goloso</h3>
+                         <p>Apuesta</p>
+                        </div>
+
+
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="bets"><img src="/Img/apuestas/0e21b584-3dd4-4ff1-be92-1de540fa76b2.jpg" alt=""></div>
+
+                    <div class="bets"><img src="/Img/apuestas/4da5565f-30b0-44cd-92e1-38c26337e026.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/apuestas/53fc50f1-f1cc-45b1-8be8-d767171d30b1.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/apuestas/b8821732-4094-4c7a-9f00-d772ef607404.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/apuestas/c1a5b500-97db-4dee-ba4f-52978acc5e79.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/apuestas/ti.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/apuestas/021ac0a0-fdcf-4bc5-ac9d-4029933404fe.jpg" alt=""></div>
+                    <div class="bets"><img src="/Img/logos/107541836.png" alt=""></div>
+                    <div class="bets"><img src="/Img/logos/107541836.png" alt=""></div>
+                    <div class="bets"><img src="/Img/logos/107541836.png" alt=""></div>
+                    <div class="bets"><img src="/Img/logos/107541836.png" alt=""></div>
+                    
+
+                </div>
+
+                <div class="popup-image" >
+                    <span>&times;</span>
+                    <img src="/Img/apuestas/ti.jpg" alt="">
+                </div>
+            </div>
+
+            <script>
+
+                document.querySelectorAll('.images-container img').forEach(image =>{
+                    image.onclick = () =>{
+                        document.querySelector('.popup-image').style.display = 'block';
+                        document.querySelector('.popup-image img').src = image.getAttribute('src');
+                    }
+                });
+
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
+                }
+
+            </script>
+
+   
+
+
+        </section>
+    </main>
+
+
+    <div class="reglass" >
+        <h1>Posiciones Del Mes <br> Marzo</h1>
+        
+        <hr>
+
+
+        <div class="datatable-container">
+
+            <table id="myTable">
+
+                
+             
+          </table>
+             
+
+
+            
+        </div>
+
+    </div>
+    <script src="/tabla.js"></script> 
+</body>
+</html>

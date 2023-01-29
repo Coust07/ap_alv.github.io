@@ -1,0 +1,255 @@
+body{
+    background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   
+}
+
+
+
+.in{
+    text-align: center;
+    float: right;
+    padding: 5px 20px;
+}
+.in a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.in a:hover{
+    transition: 1s;
+    background-color: rgb(87, 105, 105);
+    
+}
+
+.inicio{
+    background-color:#242423;
+}
+.Logo{
+    width: 350px;
+    
+
+}
+.lupa{
+width: 300px;
+height: 35px;
+position: relative;
+margin-left: -30px;
+border: 1px solid;     
+background-color:#242423;
+border-radius: 15px 0 0 15px;
+background-position: 5% 50%;
+background-repeat: no-repeat;
+background-size: 22px;
+transition-duration: 900ms;
+cursor: pointer;
+overflow: hidden;
+background-image:url(Img/logos/lupa.png) ;
+z-index: 1;
+
+}
+
+
+
+.lupa:focus{
+    width: 300px;
+    cursor: text;
+    padding-left: 40px;
+    outline: none;
+    background-size: 15px;
+    background-position: 10px 50%;
+    overflow: hidden;
+}
+
+::placeholder{
+    color: #0a67e0;;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    position: relative;
+    bottom: 70px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 1;
+    
+}
+.enviar{
+border-radius: 0 25px 25px 0;
+ height: 36px;
+ left: -10px;
+}
+
+.enviar:hover{
+    background-color: #0a67e0;
+}
+
+input{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.lista{
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: rgb(0, 0, 0);
+    list-style: none;
+    padding: 0px;
+    margin-top:40px;
+    overflow: hidden;
+    
+}
+.listass{
+    margin-bottom: -30px;
+}
+
+.Deportes{
+    position: relative;
+    top: -70px;  
+    
+}
+
+
+
+.participantes{
+    width: 25%;
+    top: 50px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+
+table {
+    width: 35%;
+    text-align: center;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.39'%3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    border-collapse: collapse;
+    margin: 0 auto;
+    top: 50px;
+    left: 250px;
+    position: relative;
+    
+  }
+  
+  th,td{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: left;
+    color: #f2f2f2;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #3f3b3b;
+    color: rgb(228, 211, 61);
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  img{
+    width: 15px;
+  }
+
+  .datatable-container{
+    color: aliceblue;
+    padding: 0px;
+    margin: -10px 0px;
+    text-align: center;
+    display: flex;
+    object-fit: contain;
+   
+    
+}
+
+.reglass{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.08'%3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    width: 20%;
+    height: 805px;
+    padding: 1px;
+    margin-top: 20px;
+    position: relative;
+    top: -5px;
+    float: right;
+    margin-right: 100px;
+    border: 1px solid gold;
+    
+}
+
+.datatable-container{
+    color: rgb(116, 139, 160);
+    padding: 0px;
+    margin: -10px 0px;
+    text-align: center;
+    display: flex;
+    object-fit: contain;
+    right: 250px;
+    position: relative;
+   
+    
+}
+
+.anualtable{
+    object-fit: contain;
+    width: 100%;
+    height: 743px;
+    top: -5px;
+    border: gold;
+    
+   
+    
+}
+
+.anual{
+    color: aliceblue;
+    text-align: center;
+    border: gold;
+    
+}
+
+#myTable img{
+    width: 15px;
+    height: 25px;
+    
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+.par{
+    color: rgb(243, 247, 4, .5);
+}
+
+tr:nth-child(2) {
+    background-color: rgb(8, 80, 8, .4);
+}
+tr:last-child {
+    background-color: rgb(160, 9, 9, .4);
+
+}
